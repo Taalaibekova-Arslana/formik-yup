@@ -1,0 +1,28 @@
+.HomePage {
+	.content {
+		.textContent {
+			margin-top: 60px;
+      margin-bottom: 60px;
+			display: flex;
+			h1 {
+				margin-top: 70px;
+				font-size: 100px;
+				color: rgb(72, 159, 130);
+				span {
+					font-size: 80px;
+					color: rgb(129, 184, 165);
+				}
+			}
+			h2 {
+				font-size: 50px;
+				color: rgb(46, 46, 46);
+				font-family: Inter;
+				font-weight: 700;
+				line-height: 18px;
+				letter-spacing: 0.2px;
+				text-align: left;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

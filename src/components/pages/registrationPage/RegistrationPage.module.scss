@@ -1,0 +1,21 @@
+.LoginPage {
+	margin-top: 130px;
+	.formInput {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+
+		.formField {
+			width: 260px;
+			height: 40px;
+			background-color: white;
+		}
+    button {
+      width: 150px;
+      height: 34px;
+    }
+	}
+}

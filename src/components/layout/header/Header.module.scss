@@ -1,0 +1,28 @@
+.Header {
+	.content {
+		display: flex;
+		justify-content: center;
+		gap: 700px;
+		.icons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.logoutLog {
+				margin-top: 2px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				img {
+					width: 20px;
+				}
+				p {
+					color: rgb(0, 0, 0);
+					font-family: Inter;
+					font-size: 14px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

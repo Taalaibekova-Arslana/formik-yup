@@ -1,0 +1,24 @@
+.AddBasketPage {
+	margin-top: 30px;
+	margin-bottom: 100px;
+	.basketProducts {
+		margin-top: 60px;
+		display: flex;
+		gap: 50px;
+		flex-wrap: wrap;
+		.basketProduct {
+			img {
+				width: 380px;
+				height: 550px;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+	.buttonPlusText {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 900px;
+	}
+}

@@ -1,0 +1,55 @@
+.Footer {
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+		.footer {
+			margin-top: 50px;
+			display: flex;
+			justify-content: center;
+			gap: 240px;
+			.footerTexts {
+				display: flex;
+				gap: 100px;
+			}
+		}
+		.paragrafText {
+			display: flex;
+			justify-content: center;
+			font-size: 14px;
+		}
+		.colorFooter {
+			display: flex;
+			h3 {
+				color: rgb(46, 46, 46);
+				font-family: Inter;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 18px;
+				letter-spacing: 0.2px;
+				text-align: left;
+				text-transform: uppercase;
+			}
+			.colorFooterYellow {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 50px;
+				width: 700px;
+				height: 80px;
+				background-color: rgb(242, 237, 114);
+				border: 2px solid black;
+			}
+			.colorFooterGreen {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 50px;
+				width: 700px;
+				height: 80px;
+				background-color: rgb(48, 114, 63);
+				border: 2px solid black;
+			}
+		}
+	}
+}

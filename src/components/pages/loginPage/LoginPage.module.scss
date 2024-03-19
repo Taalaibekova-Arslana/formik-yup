@@ -1,0 +1,19 @@
+.formInputRegistr {
+	margin-top: 130px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	input {
+		width: 260px;
+		height: 40px;
+		background-color: white;
+		color: black;
+	}
+	button {
+		width: 150px;
+		height: 34px;
+		color: white !important;
+	}
+}

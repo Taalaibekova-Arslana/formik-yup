@@ -1,0 +1,29 @@
+import { BaseQueryFn, fetchBaseQuery } from "@reduxjs/toolkit/query";
+import { createApi } from "@reduxjs/toolkit/query/react";
+
+export const baseQuery = fetchBaseQuery({
+	baseUrl: import.meta.env.VITE_API_URL,
+	prepareHeaders: (headers) => {
+		headers.set("Authorization", `Bearer ${localStorage.getItem("token")}`);
+	},
+});
+
+const baseQueryExtended: BaseQueryFn = async (args, api, extraOptions) => {
+	const result = await baseQuery(args, api, extraOptions);
+	return result;
+};
+
+export const api = createApi({
+	reducerPath: "api",
+	baseQuery: baseQueryExtended,
+	refetchOnReconnect: true,
+	refetchOnFocus: true,
+	tagTypes: [
+		"users",
+		"login",
+		"products",
+		"favoriteProducts",
+		"basket-products",
+	],
+	endpoints: () => ({}),
+});

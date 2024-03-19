@@ -1,0 +1,30 @@
+.ProductPage {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	.cardProducts {
+		margin-top: 60px;
+		display: flex;
+		gap: 50px;
+		flex-wrap: wrap;
+		.cardProduct {
+			img {
+				width: 380px;
+				height: 550px;
+				object-fit: cover;
+				object-position: center;
+			}
+			.favoriteHeart {
+			margin-left: 350px;
+				img {
+					cursor: pointer;
+					width: 29px;
+					height: 26px;
+				}
+			}
+		}
+	}
+	.buttons {
+		display: flex;
+		gap: 960px;
+	}
+}

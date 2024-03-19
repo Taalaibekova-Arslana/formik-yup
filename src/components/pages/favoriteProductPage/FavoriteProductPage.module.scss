@@ -1,0 +1,24 @@
+.FavoriteProductPage {
+	margin-top: 30px;
+	margin-bottom: 100px;
+	.FavoriteProducts {
+		margin-top: 60px;
+		display: flex;
+		gap: 50px;
+		flex-wrap: wrap;
+		.FavoriteProduct {
+			img {
+				width: 380px;
+				height: 550px;
+				object-fit: cover;
+				object-position: center;
+			}
+		}
+	}
+	.buttonPlustext {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 900px;
+	}
+}
