@@ -11,6 +11,7 @@ namespace BASKET {
 		};
 	}[];
 	type GetProductBASKETRequest = void;
+	// !PATCH
 	type PostProductBASKETResponse = {
 		newData: {
 			photoUrl: string;
@@ -20,4 +21,21 @@ namespace BASKET {
 		};
 	};
 	type PostProductBASKETRequest = string;
+	// !PATCH
+	type PatchProductBASKETResponse = {
+		_id: string;
+		newBaskets: {
+			quantityToDecrease: number;
+			photoUrl: string;
+			price: number;
+			productName: string;
+			quantity: number;
+		};
+	};
+	type PatchProductBASKETRequest = {
+		_id: number;
+		newBaskets: {
+			quantityToDecrease: number;
+		};
+	};
 }

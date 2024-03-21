@@ -14,11 +14,34 @@
 				object-position: center;
 			}
 			.favoriteHeart {
-			margin-left: 350px;
+				margin-left: 350px;
 				img {
 					cursor: pointer;
 					width: 29px;
 					height: 26px;
+				}
+			}
+			.editInputs {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 30px;
+				input {
+					width: 380px;
+					height: 60px;
+					border-radius: 10px;
+					background-color: white;
+					color: black;
+					border: 2px solid blue;
+				}
+				button {
+					width: 140px;
+					height: 40px;
+					border: 2px solid blueviolet;
+					background-color: white;
+					color: blueviolet;
+					border-radius: 10px;
 				}
 			}
 		}

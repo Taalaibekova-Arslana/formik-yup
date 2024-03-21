@@ -21,13 +21,14 @@ const api = index.injectEndpoints({
 			}),
 			invalidatesTags: ["products"],
 		}),
-		deleteProduct: builder.mutation<
-			PRODUCT.PostProductResponse,
-			PRODUCT.PostProductRequest
+		putProduct: builder.mutation<
+			PRODUCT.PutProductResponse,
+			PRODUCT.PutProductRequest
 		>({
-			query: (_id) => ({
-				url: `products${_id}`,
-				method: "DELETE",
+			query: ({ _id, newData }) => ({
+				url: `products/${_id}`,
+				method: "PUT",
+				body: newData,
 			}),
 			invalidatesTags: ["products"],
 		}),
@@ -37,5 +38,5 @@ const api = index.injectEndpoints({
 export const {
 	useGetProductQuery,
 	usePostProductMutation,
-	useDeleteProductMutation,
+	usePutProductMutation,
 } = api;

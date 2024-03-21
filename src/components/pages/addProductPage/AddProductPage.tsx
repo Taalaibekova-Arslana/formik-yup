@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -25,7 +26,6 @@ const AddProductPage: React.FC<ProductFormProps> = ({ closeModal }) => {
 				.required("Обязательное поле")
 				.url("Некорректный URL"),
 		}),
-		// eslint-disable-next-line @typescript-eslint/no-explicit-any
 		onSubmit: async (values: any) => {
 			try {
 				await postProduct(values);

@@ -20,7 +20,22 @@ const api = index.injectEndpoints({
 			}),
 			invalidatesTags: ["products"],
 		}),
+		patchBasketProduct: builder.mutation<
+			BASKET.PatchProductBASKETResponse,
+			BASKET.PatchProductBASKETRequest
+		>({
+			query: ({ newBaskets, _id }) => ({
+				url: `product-buy/${_id}`,
+				method: "PATCH",
+				body: newBaskets,
+			}),
+			invalidatesTags: ["products"],
+		}),
 	}),
 });
 
-export const { useGetBasketProductQuery, usePostBasketProductMutation } = api;
+export const {
+	useGetBasketProductQuery,
+	usePostBasketProductMutation,
+	usePatchBasketProductMutation,
+} = api;	
